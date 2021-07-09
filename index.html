@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas Vistas</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abel&family=Fjalla+One&display=swap');
+        </style>
+</head>
+
+<body>
+        <div id="container">
+            <header></header>
+            <nav></nav>
+            <div id="searchForm">
+                <form action="" method="GET" autocomplete="off">
+                    <input type="search" name="search_movie" size="40" id="inputSearch" placeholder="Busca y añade tus películas favoritas"
+                     oninput="search()"  onkeypress="show(divSearchResult)" onblur="setTimeout(hide.bind(null , divSearchResult),100)">
+                    <!-- <button type="button" id="buttonSearch" onclick="search()">Buscar película</button> -->
+                </form>
+            </div>
+            <div id="searchResultDiv">
+                <div id="searchResult">
+                    <ul>
+                        <img src="img/cargando.png" alt="buscando...">
+                    </ul>
+                </div>
+                
+            </div>
+            <div id="films">
+
+            <!-- </div>
+                 <div class="film">
+                    <div class="image">
+                        <img id="filmPoster" class="poster_img" alt="">
+                    </div>
+                    <h3 id="filmName">Tus 6 recomendaciones de películas</h3>
+                    <h6>Año: <spam id="filmDate"></spam> - Genero: <spam id="filmGenre"></spam>- Duración: <span id="filmDuration"></span> min</h6>
+                    <div class="desc " id="filmDesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto veritatis, atque eaque ipsum adipisci dolorem odit, quo cum nisi recusandae repellat et. Nobis, dolore. Possimus et ipsam iste assumenda fugiat.
+
+                    </div>       
+            </div>  -->
+        </div> 
+        <footer>
+            <div>
+                
+            </div>
+               
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/search.js"></script>    
+</body>
+</html>
